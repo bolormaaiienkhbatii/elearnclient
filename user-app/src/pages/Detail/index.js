@@ -116,7 +116,7 @@ const Detail=()=>{
                 <div className=' detail w-full h-full bg-gray-100  grid grid-cols-12'>
                     <div className='col-span-12 py-10 w-full bg-slate-800'>
                         <div className='grid grid-cols-12 md:mx-0 mx-10 '>
-                            <div className='md:col-start-2 md:col-span-10 col-span-12 '>
+                            <div className='md:col-start-1 md:col-span-10 col-span-12 '>
                                 <div className='grid grid-cols-12 gap-8 place-items-center'>
                                     <div className='md:col-start-1 md:col-span-8  col-span-12 '>
                                         <div className='md:hidden mb-5'>
