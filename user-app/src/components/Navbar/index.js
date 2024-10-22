@@ -100,7 +100,7 @@ const Navbar=()=>{
                     <div>&nbsp;</div>
                     {currentUser.user!=null&&<div onClick={logout} className='navbar-item cursor-pointer'>Logout</div>}
                     {currentUser.user==null&&<div className='navbar-item' style={{marginRight:'0'}}><a className='btn-red' href="/signup">Sign up</a></div>}
-                    <DropdownMenu/> 
+                    {/* <DropdownMenu/>  */}
                 </div>
             </div>
             

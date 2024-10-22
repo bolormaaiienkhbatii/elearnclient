@@ -59,8 +59,8 @@ require('./routes/post.routes')(app);
 require('./routes/category.routes')(app);
 require('./routes/payment.routes')(app);
 
-app.use(express.static(path.join(__dirname, '/user-app-client/build')))
-app.get("*", (req, res)=>res.sendFile(path.join(__dirname,'/user-app-client/build/index.html')))
+app.use(express.static(path.join(__dirname, '/user-app/build')))
+app.get("*", (req, res)=>res.sendFile(path.join(__dirname,'/user-app/build/index.html')))
 
 
 // set port, listen for requests
