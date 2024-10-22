@@ -1,0 +1,23 @@
+.watch-container{
+    display: flex;
+    flex-direction: row;
+}
+.watch-left{
+    flex:1;
+    height: 30vw;
+    background-color: aliceblue;
+}
+.watch-right{
+    width: 300px;
+}
+.watch-content-label{
+    padding: 15px 20px;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #efefef;
+}

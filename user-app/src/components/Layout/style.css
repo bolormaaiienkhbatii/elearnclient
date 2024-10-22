@@ -1,0 +1,16 @@
+
+.layout-container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+    background-color: black;
+}
+.body-container{
+    height: 100%;
+    background-color: white;
+}
+.header-container{
+    border-bottom:0.5px solid #aaa;
+}
+.footer-container{
+}

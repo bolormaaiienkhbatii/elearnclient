@@ -1,0 +1,106 @@
+.navbar-container{
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
+  overflow: hidden;
+  background-color: black;
+  color:white;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar-item{
+  margin-right: 25px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom:3px solid transparent;
+}
+.navbar-item a{
+  display: flex;
+}
+.navbar-item a div{
+  margin-left: 10px;
+  margin-top: -2px;
+}
+.navbar-item a i.fa {
+  padding-top: 5px;
+}
+
+.navbar-search-container{
+  flex:1;
+  background-color: aliceblue;
+  height: 30px;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 3px;
+  padding: 20 15px;
+}
+.navbar-search-container i.fa{
+  margin-right: 10px;
+}
+.navbar-search-container input{
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border:none;
+  color:white;
+  font-size: 13px;
+}
+.navbar-dropdown{
+  position: relative;
+  border-bottom:4px solid red;
+}
+.navbar-dropdown:hover .navbar-dropdown-container{
+  display: block;
+}
+
+.navbar-dropdown-container{
+  display: none;
+  position:fixed;
+  width: 100vw;
+  top:50px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: black;
+}
+.course-dropdown{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding:20px 20px 20px 0;
+}
+.brand-name{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  padding:0;
+  margin: 0;
+}
+
+.navbar a{
+  text-decoration: none;
+}
+  
+.course-dropdown-item{
+  font-size: 20px;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.course-dropdown-small{
+  font-size: 14px;
+}
+.course-dropdown-item .course-dropdown-link{
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s ease-in;
+}
+.course-dropdown-item .course-dropdown-link:hover{
+  border-bottom: 1px solid red;
+  
+}

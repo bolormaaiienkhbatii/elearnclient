@@ -1,0 +1,82 @@
+.card-container{
+    width: 100%;
+    border:3px solid #eee;
+    /*box-shadow: 0 0px 10px #bbb;*/
+    border-radius: 13px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    scale: (1);
+    transition: all 1s linear;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+}
+
+.card-container:hover{
+    scale:(1.1);
+}
+.card-container .image {
+    margin: 10px;
+}
+.card-container img{
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+    
+}
+.card-container .title{
+    font-size: 13px;
+    margin:10px 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+   height: 40px;
+    
+}
+.card-container .brief-title{
+    font-size: 11px;
+    margin:0 15px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color:#888;
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+   height: 30px;
+    
+}
+.card-container .videoCount{
+    display: flex;
+    justify-content:"space-between";
+    margin: 0 10px;
+    color:#888;
+    font-size: 12px;
+}
+.card-container .buy{
+    background-color: #3ab6be;
+    height: 50px;
+    margin:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    color: white;
+}
+.card-container .price{
+    font-size: 16px;
+    color:#fb215b;
+    font-weight: bold;
+    margin:5px 15px;
+}
+@media only screen and (max-width: 600px) {
+    .card-container {
+      width: 90vw;
+    }
+  }

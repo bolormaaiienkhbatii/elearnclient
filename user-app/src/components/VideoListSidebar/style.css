@@ -1,0 +1,20 @@
+.sb-video-item{
+    font-size: 16px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+
+}
+.sb-video-item:hover{
+    background-color: #efefef;
+}
+.sb-duration{
+    font-size: 10px;
+    color:#aaa;
+}
+.sb-video-name{
+    font-size: 20px;
+    
+}

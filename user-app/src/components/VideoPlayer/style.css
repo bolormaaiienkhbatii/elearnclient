@@ -1,0 +1,5 @@
+.video-player{
+    border:0px solid transparent;
+    overflow:hidden;
+    height: 100%;
+}
