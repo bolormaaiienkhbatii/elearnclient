@@ -50,9 +50,9 @@ const Detail=()=>{
                 method:"GET"
             });
             const coursedata = await cc.json();
-            console.log("course data ",coursedata.data)
+            console.log("course data11 ",coursedata.error)
             if(coursedata.error==false){
-                
+                console.log("aa")
                 let course1 = {
                     ...coursedata.data, 
                     videoCount:0,
@@ -64,7 +64,7 @@ const Detail=()=>{
                   0,
                 );
                 course1.videoCount=courseVideoNumber;
-                
+                console.log("here ")
                 let sumVideoDuration = 0;
                 for(let i =0; i<course1.sections.length; i++){
                     let videos = [...course1.sections[i].videos];
@@ -76,14 +76,18 @@ const Detail=()=>{
                     course1.sections[i].totalVideoDuration = totalVideoDuration;
 
                 }
+                console.log("Aa")
                 course1.sum=sumVideoDuration;
-                if(currentUser!==null && currentUser!==undefined){
+                if(currentUser!==null && currentUser!==undefined&&currentUser.user!==null){
+                    console.log("aa33", currentUser)
                     const enrolled =  course1.users.filter(user=>user===currentUser?.user.id);
                     console.log("Enrolled ", enrolled)
                     course1.enrolled = enrolled.length>0?true:false
                 }else{
+                    console.log("not enrolled ")
                     course1.enrolled=false;
                 }
+                console.log("before ",course1)
                 setCourse(course1);
 
                 
