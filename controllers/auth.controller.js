@@ -32,7 +32,7 @@ exports.signup = async (req, res) => {
                 user.roles = roles.map((role) => role._id);
                 try {
                     await user.save();
-                    res.json({ error:false, message: "User was registered successfully!" });
+                    res.json({ error:false, message: "User was registered successfully!"});
 
                 } catch (e) {
                     res.status(500).json({ message: e });
@@ -47,6 +47,7 @@ exports.signup = async (req, res) => {
             try{
                 const role = await Role.findOne({ name: "user" });
                     user.roles = [role._id];
+                    console.log("user aa", user)
                     try{
                         await user.save();
                         res.json({ error:false, message: "User was registered successfully!" });
